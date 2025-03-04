@@ -3,18 +3,39 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint:es": "eslint \"{packages,apps}/**/*.ts\""
+    "lint:es": "eslint \"{packages,apps}/**/*.ts\"",
+    "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
+    "commit": "git-cz",
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node": "22.2.0",
+    "@types/jest": "29.5.12",
+    "typescript": "5.5.4",
     "eslint": "9.9.0",
     "@eslint/js": "9.9.0",
+    "cspell": "8.13.3",
     "globals": "15.9.0",
     "typescript-eslint": "8.1.0",
     "@typescript-eslint/eslint-plugin": "8.1.0",
-    "eslint-plugin-simple-import-sort": "12.1.1"
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "lint-staged": "15.2.9",
+    "prettier": "3.3.3",
+    "@commitlint/cli": "19.4.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "commitizen": "4.3.0",
+    "husky": "9.1.4",
+    "cz-git": "1.9.4",
+    "madge": "8.0.0",
+    "turbo": "2.0.12"
   }
 }
