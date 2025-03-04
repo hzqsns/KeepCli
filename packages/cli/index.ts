@@ -1,6 +1,6 @@
 // export * from "./lib/base";
 
-let person = {
+const person = {
     name: 'hzqsns',
     age: 28
 }

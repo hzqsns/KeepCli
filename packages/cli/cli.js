@@ -5,7 +5,7 @@
 // console.log(process.argv.slice(2));
 
 // commander写法
-// esm和commanjs可以混用，但是需要打包工具
+// esm和commonjs可以混用，但是需要打包工具
 const { Command } = require("commander");
 const pkg = require("./package.json");
 
