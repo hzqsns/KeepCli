@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		// 指定编译后的JavaScript目标版本为ES2015
+		"target": "ES2015",
+		// 包含ESNext标准库的类型定义
+		"lib": ["ESNext", "DOM"],
+		// 使用ES模块系统
+		"module": "ESNext",
+		// 使用Node.js的模块解析策略
+		"moduleResolution": "Node",
+		// 启用所有严格类型检查选项
+		// "strict": true,
+		// 允许CommonJS和ES模块之间的互操作
+		// "esModuleInterop": true,
+		// 跳过库文件的类型检查
+		// "skipLibCheck": true,
+		// 强制文件名大小写一致性
+		// "forceConsistentCasingInFileNames": true
+	},
+	// 包含packages目录下所有文件进行编译
+	"include": ["packages/**/*"]
+}
