@@ -8,6 +8,8 @@
 		"module": "ESNext",
 		// 使用Node.js的模块解析策略
 		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
 		// 启用所有严格类型检查选项
 		// "strict": true,
 		// 允许CommonJS和ES模块之间的互操作
