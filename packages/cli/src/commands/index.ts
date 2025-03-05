@@ -23,10 +23,6 @@ import { registerCommand } from "./registerCommand";
  * Vue.use(VueI18n)
  */
 
-
-
-
-
 // 注册命令
 registerCommand(build);
 registerCommand(serve);

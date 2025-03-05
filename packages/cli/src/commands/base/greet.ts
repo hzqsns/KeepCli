@@ -13,7 +13,7 @@ export function greet(program: Command) {
                 message: 'What is your name?'
             })
             const hobbyResult = await prompts({
-                type: 'text',
+                type: 'select',
                 name: 'hobby',
                 message: 'What is your hobby?',
                 choices: [

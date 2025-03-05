@@ -6,6 +6,7 @@
 // import { info } from './commands/base/info'
 import { Command, program } from 'commander'
 import './commands'
+import './utils/loadTemplate'
 
 // export const run = (args: string[]) => {
 //     const [node, path, ...runArgs] = args
