@@ -1,33 +1,37 @@
 {
-	"name": "@keep/cli",
-	"version": "0.0.1",
-	"main": "index.js",
-	"bin": {
-		"keep": "bin/keep"
-	},
-	"files": [
-		"bin",
-		"dist"
-	],
-	"scripts": {
-		"dev": "tsup --watch",
-		"build": "tsup"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "MIT",
-	"description": "",
-	"devDependencies": {
-		"@keep/core": "workspace:*",
-		"@keep/shared": "workspace:*",
-		"commander": "12.1.0",
-		"picocolors": "1.1.1",
-		"prompts": "2.4.2",
-		"gradient-string": "3.0.0",
-		"tsup": "8.2.4",
-		"consola": "3.4.0",
-		"fs-extra": "11.3.0",
-        "giget": "1.2.3"
-
-	}
+    "name": "@keep/cli",
+    "version": "0.0.1",
+    "main": "index.js",
+    "bin": {
+        "keep": "bin/keep"
+    },
+    "files": [
+        "bin",
+        "dist"
+    ],
+    "scripts": {
+        "dev": "tsup --watch",
+        "build": "tsup",
+        "publish-npm": "npm publish",
+        "test": "npx playwright test -c playwright.config.ts",
+        "auth": "cross-env AUTH=true npx playwright test -c playwright.config.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "description": "",
+    "devDependencies": {
+        "@keep/core": "workspace:*",
+        "@keep/shared": "workspace:*",
+        "commander": "12.1.0",
+        "picocolors": "1.1.1",
+        "prompts": "2.4.2",
+        "gradient-string": "3.0.0",
+        "tsup": "8.2.4",
+        "consola": "3.4.0",
+        "fs-extra": "11.3.0",
+        "giget": "1.2.3",
+        "playwright": "1.46.1",
+        "@playwright/test": "1.46.1"
+    }
 }

@@ -1,10 +1,13 @@
-import { logger } from "../utils/logger";
-import { build } from "./base/build";
-import { serve } from "./base/serve";
-import { create } from "./base/create";
-import { greet } from "./base/greet";
-import { info } from "./base/info";
-import { registerCommand } from "./registerCommand";
+import { logger } from '../utils/logger'
+import { build } from './base/build'
+import { serve } from './base/serve'
+import { create } from './base/create'
+import { greet } from './base/greet'
+import { info } from './base/info'
+import { copyCookie } from './base/copyCookie'
+import { copyCookieTest } from './base/copyCookieTest'
+import { useCookieTest } from './base/useCookieTest'
+import { registerCommand } from './registerCommand'
 
 /**
  * 定义命令的格式
@@ -24,11 +27,11 @@ import { registerCommand } from "./registerCommand";
  */
 
 // 注册命令
-registerCommand(build);
-registerCommand(serve);
-registerCommand(create);
-registerCommand(greet);
-registerCommand(info);
-
-
-
+registerCommand(build)
+registerCommand(serve)
+registerCommand(create)
+registerCommand(greet)
+registerCommand(info)
+registerCommand(copyCookie)
+registerCommand(copyCookieTest)
+registerCommand(useCookieTest)

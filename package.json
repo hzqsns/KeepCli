@@ -2,11 +2,13 @@
   "name": "keep-cli",
   "version": "1.0.0",
   "main": "index.js",
+  "packageManager": "pnpm@10.2.1",
   "scripts": {
     "lint:es": "eslint \"{packages,apps}/**/*.ts\"",
     "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "commit": "git-cz",
-    "prepare": "husky"
+    "prepare": "husky",
+    "publish:npm": "turbo publish-npm"
   },
   "config": {
     "commitizen": {
@@ -36,6 +38,6 @@
     "husky": "9.1.4",
     "cz-git": "1.9.4",
     "madge": "8.0.0",
-    "turbo": "2.0.12"
+    "turbo": "2.0.14"
   }
 }
